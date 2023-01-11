@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" id="html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body>
+    <div class="h-[100%] flex relative">
+      <nav
+        class="absolute w-[100%] flex justify-between top-[40px] px-[20px] xl:px-[64px]"
+      >
+        <h2 class="text-[#496F74] dark:text-[#6E9195] text-[24px] font-bold">
+          Kreativ
+        </h2>
+        <ul
+          class="flex items-center gap-[22px] text-[#24445B] dark:text-[#ffffff]"
+        >
+          <li class="cursor-pointer"><a href="">Home</a></li>
+          <li class="cursor-pointer"><a href="">Contact</a></li>
+          <li id="btn-theme" class="cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 stroke-[#24445B] dark:stroke-white"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+              />
+            </svg>
+          </li>
+        </ul>
+      </nav>
+      <div
+        class="w-[100%] px-[32px] bg-[url('/src/svg/stroke.svg')] bg-no-repeat dark:bg-[#1F2937]"
+      >
+        <div class="flex justify-center w-[100%] xl:w-[768px]">
+          <div class="flex flex-col">
+            <h3
+              class="text-[#000000] text-[24px] font-bold mt-[136px] dark:text-[#ffffff]"
+            >
+              Let’s get you started
+            </h3>
+            <p class="mt-[60px] dark:text-[#ffffff]">Full name</p>
+            <input
+              type="text"
+              placeholder="Ade Tiger"
+              class="w-[311px] sm:w-[400px] h-[40px] border-[1px] border-[#CCCCCC] rounded pl-[16px] mt-[4px] mb-[24px] dark:bg-[transparent] dark:text-[#ffffff]"
+            />
+            <p class="dark:text-[#ffffff]">Email address</p>
+            <input
+              type="email"
+              placeholder="yourname@email.com"
+              class="w-[311px] sm:w-[400px] h-[40px] border-[1px] border-[#CCCCCC] rounded pl-[16px] mt-[4px] mb-[24px] dark:bg-[transparent] dark:text-[#ffffff]"
+            />
+            <div class="relative">
+              <p class="dark:text-[#ffffff]">Phone number</p>
+              <input
+                type="number"
+                placeholder="+234  800 2738 9700"
+                class="w-[311px] sm:w-[400px] h-[40px] border-[1px] border-[#CCCCCC] rounded pl-[16px] mt-[4px] mb-[24px] dark:bg-[transparent] pl-[60px] dark:text-[#ffffff]"
+              />
+              <img
+                src="./svg/1.svg"
+                alt=""
+                class="absolute top-[40px] left-[16px]"
+              />
+            </div>
+            <div class="relative">
+              <p class="dark:text-[#ffffff]">Create password</p>
+              <input
+                type="password"
+                placeholder="* * * * * *"
+                class="w-[311px] sm:w-[400px] h-[40px] border-[1px] border-[#CCCCCC] rounded pl-[16px] mt-[4px] mb-[12px] dark:bg-[transparent] dark:text-[#ffffff]"
+              />
+              <svg
+                width="16"
+                height="9"
+                viewBox="0 0 16 9"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="absolute top-[45px] right-[16px] dark:stroke-[#ffffff]"
+              >
+                <path
+                  d="M6.228 8.52128L4.94066 8.17595L5.46533 6.21662C4.67998 5.92697 3.95008 5.50486 3.30733 4.96862L1.872 6.40462L0.928663 5.46128L2.36466 4.02595C1.55405 3.05512 1.00939 1.89046 0.783997 0.645949L2.096 0.406616C2.602 3.20795 5.05266 5.33328 8 5.33328C10.9467 5.33328 13.398 3.20795 13.904 0.406616L15.216 0.645283C14.9909 1.88996 14.4465 3.05486 13.636 4.02595L15.0713 5.46128L14.128 6.40462L12.6927 4.96862C12.0499 5.50486 11.32 5.92697 10.5347 6.21662L11.0593 8.17662L9.772 8.52128L9.24666 6.56128C8.42157 6.70267 7.57843 6.70267 6.75333 6.56128L6.228 8.52128Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+            <p class="text-[#CCCCCC] text-[12px] mb-[8px]">
+              Password must contain a minimum of 8 characters
+            </p>
+            <p class="text-[#CCCCCC] text-[12px]">
+              Password must contain at least one symbol e.g. @, !
+            </p>
+            <p class="mt-[24px] dark:text-[#ffffff]">
+              Location
+              <span class="text-[#CCCCCC] text-[12px] ml-[15px]"
+                >(Optional)</span
+              >
+            </p>
+            <input
+              type="text"
+              placeholder="Select Location"
+              class="w-[311px] sm:w-[400px] h-[40px] border-[1px] border-[#CCCCCC] rounded pl-[16px] mt-[4px] mb-[32px] dark:bg-[transparent] dark:text-[#ffffff]"
+            />
+            <button
+              class="w-[311px] sm:w-[400px] h-[40px] rounded bg-[#284A5E] text-[#ffffff] dark:bg-[#6B7280]"
+            >
+              Sing up
+            </button>
+            <p class="mt-[32px] text-center text-[#CCCCCC] font-bold pb-[92px]">
+              Already a user?
+              <a href="#" class="text-[#476D73] ml-[16px] underline">Login</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="hidden md:flex bg-gradient-to-tl from-[#1E3E57] to-[#517879] flex flex-col items-center dark:bg-gradient-to-tl dark:from-[#047857] dark:to-[#1E3A8A]"
+      >
+        <p
+          class="md:text-[40px] lg:text-[54px] xl:text-[64px] font-bold text-[#E4E4E4] max-w-[70%] mt-[160px]"
+        >
+          Rapidly build modern websites without ever leaving your HTML.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      document.querySelector("#btn-theme").addEventListener("click", () => {
+        document.getElementById("html").classList.toggle("dark");
+      });
+    </script>
+  </body>
+</html>
